@@ -59,11 +59,11 @@ public class BaseTest {
 	public void beforeClass() throws IOException {
 		System.out.println("Before Class --- Browser Setup");
 
-		String browser = fileutility.readDataFromPropertyFile("browserName");
-		String url = fileutility.readDataFromPropertyFile("url");
+//		String browser = fileutility.readDataFromPropertyFile("browserName");
+//		String url = fileutility.readDataFromPropertyFile("url");
 
-//		String browser = System.getProperty("browserName");
-//		String url = System.getProperty("baseUrl");
+		String browser = System.getProperty("browserName");
+		String url = System.getProperty("baseUrl");
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.out.println("Chrome Browser");
